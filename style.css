@@ -86,6 +86,8 @@ input[type="text"]:focus {
 @media screen and (max-width: 700px) {
   #btn {
     width: 100%;
+    height: 35px !important;
+    transform: translateY(10px) !important;
   }
   img {
     transform: scale(0.6) !important;
@@ -113,9 +115,15 @@ input[type="text"]:focus {
   }
 }
 @media screen and (orientation: landscape) and (max-width: 850px) {
+  img {
+    transform: scale(0.75) !important;
+  }
+  img:active {
+    transform: scale(0.8) !important;
+  }
   input {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: aqua;
     border: 4px solid blueviolet;
     border-radius: 7px;
@@ -127,5 +135,14 @@ input[type="text"]:focus {
   .container-fluid {
     height: 350px !important;
     padding: 0px 60px !important;
+  }
+  .col-4{
+    transform: translateY(-40px) !important;
+  }
+  .col-12{
+    transform: translateY(-25px) !important;
+  }
+  #btn{
+    height: 35px !important;
   }
 }

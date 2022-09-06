@@ -67,7 +67,7 @@ pl2.style.display="block"
   }
   if (l == 3) {
     m4.style.display = "block";
-    pl1.style.display="none"
+    pl1.style.opacity="0"
     btn.style.visibility = "visible";
     m4.innerText = c1 > c2 ? namepl1+ " برنده شد" : namepl2+ " برنده شد";
     assign = () => {};
