@@ -1,83 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=”viewport” content=”width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=false;” />
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="./image/pngegg.png" />
+    <link rel="stylesheet" href="./style.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Amiri&family=Baloo+Bhaijaan+2:wght@500&family=Balsamiq+Sans&family=Cabin&family=Cookie&family=Courgette&family=Cousine&family=Karla:wght@300&family=Noto+Sans+Arabic&family=Questrial&family=Rubik:wght@300;400&family=Spline+Sans&display=swap"
-    rel="stylesheet"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri&family=Baloo+Bhaijaan+2:wght@500&family=Balsamiq+Sans&family=Cabin&family=Cookie&family=Courgette&family=Cousine&family=Karla:wght@300&family=Noto+Sans+Arabic&family=Questrial&family=Rubik:wght@300;400&family=Spline+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>سنگ، کاغذ، قیچی</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid px-xl-5">
-        <div class="row align-items-center justify-content-evenly m-0">
-          <h1 id="m1" class="m1 m-0">مرحله 1</h1>
-          <h1 id="m2" class="m2 m-0">مرحله 2</h1>
-          <h1 id="m3" class="m3 m-0">مرحله 3</h1>
-          <h1 id="m4" class="m4 m-0"></h1>
-          <div
-            class="col-12 col-sm-4 d-flex align-items-center justify-content-center m-0 p-0"
+      <div class="row align-items-center justify-content-evenly m-0">
+        <h1 id="m1" class="m1 m-0">مرحله 1</h1>
+        <h1 id="m2" class="m2 m-0">مرحله 2</h1>
+        <h1 id="m3" class="m3 m-0">مرحله 3</h1>
+        <h1 id="m4" class="m4 m-0"></h1>
+        <h2 id="pl1" class="mt-xl-5"></h2>
+        <h2 id="pl2" class="mt-xl-5"></h2>
+        <h1 id="er">لطفا هر دو اسمتون رو وارد کنید</h1>
+        <div
+          class="col-12 col-sm-4 d-flex align-items-center justify-content-center m-0 p-0"
+        >
+          <img
+            src="./image/sang.png"
+            alt=""
+            class="sang img-fluid"
+            id="sang"
+            onclick="assign('R')"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-4 d-flex align-items-center justify-content-center py-0 m-0"
+        >
+          <img
+            src="./image/kaghaz.png"
+            alt=""
+            class="kaghaz img-fluid"
+            id="kaghaz"
+            onclick="assign('P')"
+          />
+        </div>
+        <div
+          class="col-12 col-sm-4 d-flex align-items-center justify-content-center py-0 m-0"
+        >
+          <img
+            src="./image/gheychi.png"
+            alt=""
+            class="gheychi img-fluid"
+            id="gheychi"
+            onclick="assign('S')"
+          />
+        </div>
+        <div
+          class="col-4 p-0 p-lg-3 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 id="scoretext"></h3>
+          <input type="text" readonly class="displayuser1" id="displayuser1" />
+        </div>
+        <div class="col-4 d-flex align-items-center justify-content-center p-0">
+          <!-- <a id="" onclick="al()">vdv</a> -->
+          <button
+            onClick="window.location.href=window.location.href"
+            class="btn p-0"
+            id="btn"
           >
-            <img
-              src="./image/sang.png"
-              alt=""
-              class="sang img-fluid"
-              id="sang"
-              onclick="assign('R')"
-            />
-          </div>
-          <div
-            class="col-12 col-sm-4 d-flex align-items-center justify-content-center py-0 m-0"
-          >
-            <img
-              src="./image/kaghaz.png"
-              alt=""
-              class="kaghaz img-fluid"
-              id="kaghaz"
-              onclick="assign('P')"
-            />
-          </div>
-          <div
-            class="col-12 col-sm-4 d-flex align-items-center justify-content-center py-0 m-0"
-          >
-            <img
-              src="./image/gheychi.png"
-              alt=""
-              class="gheychi img-fluid"
-              id="gheychi"
-              onclick="assign('S')"
-            />
-          </div>
-          <div
-            class="col-4 p-0 p-lg-3 d-flex flex-column align-items-center justify-content-center"
-          >
-            <h3>بازیکن 1</h3>
-            <input type="text" readonly class="displayuser1" id="displayuser1" />
-          </div>
-          <div class="col-4 d-flex align-items-center justify-content-center p-0">
-            <!-- <a id="" onclick="al()">vdv</a> -->
-            <button
-              onClick="window.location.href=window.location.href"
-              class="btn p-0"
-              id="btn"
-            >
-              شروع مجدد
-            </button>
-          </div>
-          <div
-            class="col-4 p-0 p-lg-3 d-flex flex-column align-items-center justify-content-center"
-          >
-            <h3>بازیکن 2</h3>
-            <input type="text" readonly class="displayuser2" id="displayuser2" />
-          </div>
+            شروع مجدد
+          </button>
+        </div>
+        <div
+          class="col-4 p-0 p-lg-3 d-flex flex-column align-items-center justify-content-center"
+        >
+          <h3 id="scoretext2"></h3>
+          <input type="text" readonly class="displayuser2" id="displayuser2" />
         </div>
       </div>
+    </div>
     <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
