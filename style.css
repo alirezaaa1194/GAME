@@ -6,6 +6,7 @@
   border: 10px solid blueviolet;
   border-radius: 20px;
   padding: 10px;
+  height: 100vh;
 }
 img {
   transform: scale(0.9);
